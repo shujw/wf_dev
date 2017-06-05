@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-config>
+  <service>
+    <service-id>apply</service-id>
+    <controller-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ApplyServiceController</controller-class>
+    <transition-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ApplyServiceTransition</transition-class>
+    <next-page>
+      <page-path>/sample/im_workflow/purchase/apply.jsp</page-path>
+    </next-page>
+  </service>
+  <service>
+    <service-id>approve</service-id>
+    <controller-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ApproveServiceController</controller-class>
+    <transition-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ApproveServiceTransition</transition-class>
+    <next-page>
+      <page-path>/sample/im_workflow/purchase/approve.jsp</page-path>
+    </next-page>
+  </service>
+  <service>
+    <service-id>confirm</service-id>
+    <controller-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ConfirmServiceController</controller-class>
+    <transition-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.ConfirmServiceTransition</transition-class>
+    <next-page>
+      <page-path>/sample/im_workflow/purchase/confirm.jsp</page-path>
+    </next-page>
+  </service>
+  <service>
+    <service-id>detail</service-id>
+    <controller-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.DetailServiceController</controller-class>
+    <transition-class>jp.co.intra_mart.sample.workflow.purchase.controller.service.DetailServiceTransition</transition-class>
+    <next-page>
+      <page-path>/sample/im_workflow/purchase/detail.jsp</page-path>
+    </next-page>
+  </service>
+  <service>
+    <service-id>authority_item_total</service-id>
+    <controller-class>jp.co.intra_mart.sample.workflow.purchase.plugin.authority.item_total.controller.service.ItemTotalConfigServiceController</controller-class>
+    <transition-class>jp.co.intra_mart.sample.workflow.purchase.plugin.authority.item_total.controller.service.ItemTotalConfigTransition</transition-class>
+    <next-page>
+      <page-path>/sample/im_workflow/purchase/plugin/authority/item_total/itemTotalConfig.jsp</page-path>
+    </next-page>
+  </service>
+</service-config>

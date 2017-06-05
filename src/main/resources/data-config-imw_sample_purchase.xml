@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-config>
+  <dao-group>
+    <dao-key>imwpurchase</dao-key>
+    <dao>
+      <dao-class>jp.co.intra_mart.sample.workflow.purchase.model.data.ImwPurchaseDAO</dao-class>
+      <connector-name>tenant_db</connector-name>
+    </dao>
+  </dao-group>
+</data-config>

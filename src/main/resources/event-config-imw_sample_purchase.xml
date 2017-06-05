@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event-config>
+  <event-group>
+    <event-key>select</event-key>
+    <event-class>jp.co.intra_mart.sample.workflow.purchase.model.event.SelectEvent</event-class>
+    <event-factory>
+      <factory-class>jp.co.intra_mart.framework.base.event.StandardEventListenerFactory</factory-class>
+      <init-param>
+        <param-name>listener</param-name>
+        <param-value>jp.co.intra_mart.sample.workflow.purchase.model.event.SelectEventListener</param-value>
+      </init-param>
+    </event-factory>
+  </event-group>
+  <event-group>
+    <event-key>insert</event-key>
+    <event-class>jp.co.intra_mart.sample.workflow.purchase.model.event.InsertEvent</event-class>
+    <event-factory>
+      <factory-class>jp.co.intra_mart.framework.base.event.StandardEventListenerFactory</factory-class>
+      <init-param>
+        <param-name>listener</param-name>
+        <param-value>jp.co.intra_mart.sample.workflow.purchase.model.event.InsertEventListener</param-value>
+      </init-param>
+    </event-factory>
+  </event-group>
+  <event-group>
+    <event-key>update</event-key>
+    <event-class>jp.co.intra_mart.sample.workflow.purchase.model.event.UpdateEvent</event-class>
+    <event-factory>
+      <factory-class>jp.co.intra_mart.framework.base.event.StandardEventListenerFactory</factory-class>
+      <init-param>
+        <param-name>listener</param-name>
+        <param-value>jp.co.intra_mart.sample.workflow.purchase.model.event.UpdateEventListener</param-value>
+      </init-param>
+    </event-factory>
+  </event-group>
+  <event-group>
+    <event-key>delete</event-key>
+    <event-class>jp.co.intra_mart.sample.workflow.purchase.model.event.DeleteEvent</event-class>
+    <event-factory>
+      <factory-class>jp.co.intra_mart.framework.base.event.StandardEventListenerFactory</factory-class>
+      <init-param>
+        <param-name>listener</param-name>
+        <param-value>jp.co.intra_mart.sample.workflow.purchase.model.event.DeleteEventListener</param-value>
+      </init-param>
+    </event-factory>
+  </event-group>
+</event-config>
